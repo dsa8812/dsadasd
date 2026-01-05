@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>暖心树洞 | 你的专属情绪角落</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- 页面标题 -->
+    <header class="header">
+      <h1>🌿 暖心树洞</h1>
+      <p>把想说的话留在这里，无人知晓，自在表达</p>
+    </header>
+
+    <!-- 留言提交表单 -->
+    <section class="form-section">
+      <div class="form-card">
+        <h2>写下你的心声</h2>
+        <div id="error-tip" class="error-tip"></div>
+        <div class="form-group">
+          <label for="nickname">你的昵称</label>
+          <input type="text" id="nickname" placeholder="取一个喜欢的名字（必填）">
+        </div>
+        <div class="form-group">
+          <label for="content">留言内容</label>
+          <textarea id="content" rows="5" placeholder="想说的话都可以写在这里～（必填）"></textarea>
+        </div>
+        <button id="submit-btn" class="submit-btn">提交留言</button>
+      </div>
+    </section>
+
+    <!-- 留言列表 -->
+    <section class="messages-section">
+      <h2>树洞回音</h2>
+      <div id="messages-list" class="messages-list">
+        <!-- 留言卡片由JS动态渲染 -->
+        <div class="empty-tip">暂无留言，快来成为第一个倾诉的人吧～</div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
